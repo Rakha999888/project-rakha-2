@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dicoding Story - Share your stories with others">
+  <meta name="theme-color" content="#4285f4">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Dicoding Story</title>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to content</a>
+  
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>Dicoding Story</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/add">Add Story</a></li>
+        <li id="loginMenuItem"><a href="#/login">Login</a></li>
+        <li id="registerMenuItem"><a href="#/register">Register</a></li>
+        <li id="logoutMenuItem" class="hidden"><a href="#" id="logoutButton">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="mainContent"></main>
+ <footer>
+    <p>Rakha Story &copy; 2025 - Share your stories</p>
+  </footer>
+
+  <!-- Load leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</body>
+</html>

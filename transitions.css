@@ -1,0 +1,55 @@
+/* View transitions */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-from-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-to-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* View Transition API polyfill support */
+::view-transition-old(root) {
+  animation: 0.25s fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.25s fade-in;
+}
+
+/* Fallback for browsers without View Transition API */
+.page-transition {
+  animation: 0.25s fade-in;
+}
+
+/* Specific transitions for different page types */
+.home-transition {
+  view-transition-name: home-page;
+}
+
+.detail-transition {
+  view-transition-name: detail-page;
+}
+
+.add-transition {
+  view-transition-name: add-page;
+}
+
+.login-transition {
+  view-transition-name: login-page;
+}
+
+.register-transition {
+  view-transition-name: register-page;
+}
